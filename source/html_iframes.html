@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <link rel="stylesheet" href="layout-styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="utf-8">
+    <title>HTML Iframes</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <a class="header" href="home.html">
+            <h2>HTML Tutorial</h2>
+        </a>
+    </div>
+
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn"><b>HTML</b>
+          <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="dropdown-content">
+                <a href="home.html">HTML Tutorial</a>
+                <a href="html_overview.html">HTML Overview</a>
+                <a href="html_basictags.html">HTML Basic Tags</a>
+                <a href="html_elements.html">HTML Elements</a>
+                <a href="html_attributes.html">HTML Attributes</a>
+                <a href="html_phrasetags.html">HTML Phrase Tags</a>
+                <a href="html_images.html">HTML Images</a>
+                <a href="html_tables.html">HTML Tables</a>
+                <a href="html_lists.html">HTML Lists</a>
+                <a href="html_links.html">HTML Links</a>
+                <a href="html_iframes.html">HTML Iframes</a>
+
+            </div>
+
+        </div>
+
+        <a href="videos.html"><b>Videos</b></a>
+        <a href="about.html"><b>About</b></a>
+
+    </div>
+
+    <div class="text">
+        <h1>HTML Iframes</h1>
+        <p>An HTML iframe is used to display a web page within a web page.</p>
+        <h2>HTML Iframe Syntax</h2>
+        <p>The HTML <b>&lt;iframe&gt;</b> tag specifies an inline frame.</p>
+        <p>An inline frame is used to embed another document within the current HTML document.</p>
+        <h3>Example</h3>
+        <pre>
+            &lt;iframe src="url" title="description"&gt;&lt;/iframe&gt;
+        </pre>
+        <em>Tip: It is a good practice to always include a <b>title</b> attribute for the <b>&lt;iframe&gt;</b>. This is used by screen readers to read out what the content of the iframe is.</em>
+        <h2>Iframe - Set Height and Width</h2>
+        <p>Use the <b>height</b> and <b>width</b> attributes to specify the size of the iframe.</p>
+        <p>The height and width are specified in pixels by default:</p>
+        <h3>Example</h3>
+        <pre>
+            &lt;iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"&gt;&lt;/iframe&gt;
+        </pre>
+        <p>This will produce the following result −</p>
+        <pre>
+            <iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+        </pre>
+        <h2>Iframe - Target for a Link</h2>
+        <p>An iframe can be used as the target frame for a link.</p>
+        <p>The <b>target</b> attribute of the link must refer to the <b>name</b> attribute of the iframe:</p>
+        <h3>Example</h3>
+        <pre>
+            &lt;iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"&gt;&lt;/iframe&gt;
+
+            &lt;p&gt;&lt;a href="https://www.w3schools.com" target="iframe_a"&gt;W3Schools.com&lt;/a&gt;&lt;/p&gt;
+        </pre>
+        <p>This will produce the following result −</p>
+        <pre>
+            <iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
+
+            <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+        </pre>
+        <h3>Example</h3>
+        <ul>
+            <li>The HTML <b>&lt;iframe&gt;</b> tag specifies an inline frame</li>
+            <li>The <b>src</b> attribute defines the URL of the page to embed</li>
+            <li>Always include a <b>title</b> attribute (for screen readers)</li>
+            <li>The <b>height</b> and <b>width</b> attributes specifies the size of the iframe</li>
+            <li>Use <b>border:none;</b> to remove the border around the iframe</li>
+        </ul>
+
+    </div>
+</body>
+
+</html>

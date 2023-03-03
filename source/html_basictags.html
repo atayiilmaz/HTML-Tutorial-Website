@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <link rel="stylesheet" href="layout-styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="utf-8">
+    <title>HTML Basic Tags</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <a class="header" href="home.html">
+            <h2>HTML Tutorial</h2>
+        </a>
+    </div>
+
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn"><b>HTML</b>
+          <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="dropdown-content">
+                <a href="home.html">HTML Tutorial</a>
+                <a href="html_overview.html">HTML Overview</a>
+                <a href="html_basictags.html">HTML Basic Tags</a>
+                <a href="html_elements.html">HTML Elements</a>
+                <a href="html_attributes.html">HTML Attributes</a>
+                <a href="html_phrasetags.html">HTML Phrase Tags</a>
+                <a href="html_images.html">HTML Images</a>
+                <a href="html_tables.html">HTML Tables</a>
+                <a href="html_lists.html">HTML Lists</a>
+                <a href="html_links.html">HTML Links</a>
+                <a href="html_iframes.html">HTML Iframes</a>
+
+            </div>
+
+        </div>
+
+        <a href="videos.html"><b>Videos</b></a>
+        <a href="about.html"><b>About</b></a>
+
+    </div>
+
+    <div class="text">
+        <h1>HTML Tags</h1>
+        <p>As told earlier, HTML is a markup language and makes use of various tags to format the content. These tags are enclosed within angle braces
+            <b>&lt;Tag Name&gt;&lt;/Tag&gt;</b>. Except few tags, most of the tags have their corresponding closing tags. For example,
+            <b>&lt;html&gt;&lt;/html&gt;</b> has its closing tag
+
+            <b></html></b> and
+
+            <b><body></body></b> tag has its closing tag <b></body></b> tag etc.</p>
+        <p>Above example of HTML document uses the following tags −</p>
+        <table style="width:100%">
+            <tr>
+                <th>No</th>
+                <th>Tag & Description</th>
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>&lt;!DOCTYPE...&gt; <br>This tag defines the document type and HTML version.</td>
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    &lt;html&gt; <br>This tag encloses the complete HTML document and mainly comprises of document header which is represented by &lt;head&gt;...&lt;/head&gt; and document body which is represented by &lt;body&gt;...&lt;/body&gt; tags.</td>
+
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>&lt;head&gt; <br>This tag represents the document's header which can keep other HTML tags like &lt;title&gt;, &lt;link&gt; etc.</td>
+
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>&lt;title&gt; <br>The &lt;title&gt; tag is used inside the &lt;head&gt; tag to mention the document title.</td>
+
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>&lt;body&gt; <br>This tag represents the document's body which keeps other HTML tags like &lt;h1&gt;, &lt;div&gt;, &lt;p&gt; etc.</td>
+
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>&lt;h1&gt; <br>This tag represents the heading.</td>
+
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>&lt;p&gt; <br>This tag represents a paragraph.</td>
+
+            </tr>
+
+        </table>
+
+        <p>To learn HTML, you will need to study various tags and understand how they behave, while formatting a textual document. Learning HTML is simple as users have to learn the usage of different tags in order to format the text or images to make a
+            beautiful webpage.</p>
+        <p>World Wide Web Consortium (W3C) recommends to use lowercase tags starting from HTML 4.</p>
+        <h2>Heading Tags</h2>
+        <p>Any document starts with a heading. You can use different sizes for your headings. HTML also has six levels of headings, which use the elements &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, and &lt;h6&gt;. While displaying any heading,
+            browser adds one line before and one line after that heading.</p>
+        <h3>Example</h3>
+        <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+
+      &lt;head&gt;
+        &lt;title&gt;Heading Example&lt;/title&gt;
+      &lt;/head&gt;
+	
+      &lt;body&gt;
+        &lt;h1&gt;This is heading 1&lt;/h1&gt;
+        &lt;h2&gt;This is heading 2&lt;/h2&gt;
+        &lt;h3&gt;This is heading 3&lt;/h3&gt;
+        &lt;h4&gt;This is heading 4&lt;/h4&gt;
+        &lt;h5&gt;This is heading 5&lt;/h5&gt;
+        &lt;h6&gt;This is heading 6&lt;/h6&gt;
+    &lt;/body&gt;
+	
+    &lt;/html&gt;
+        </pre>
+        <h2>Paragraph Tag</h2>
+        <p>The &lt;p&gt; tag offers a way to structure your text into different paragraphs. Each paragraph of text should go in between an opening &lt;p&gt; and a closing &lt;/p&gt; tag as shown below in the example −</p>
+        <h3>Example</h3>
+        <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+
+    &lt;head&gt;
+        &lt;title&gt;Paragraph Example&lt;/title&gt;
+    &lt;/head&gt;
+	
+    &lt;body&gt;
+        &lt;p&gt;Here is a first paragraph of text.&lt;/p&gt;
+        &lt;p&gt;Here is a second paragraph of text.&lt;/p&gt;
+        &lt;p&gt;Here is a third paragraph of text.&lt;/p&gt;
+    &lt;/body&gt;
+	
+    &lt;/html&gt;
+            
+        </pre>
+        <h2>Line Break Tag</h2>
+        <p>Whenever you use the &lt;br /&gt; element, anything following it starts from the next line. This tag is an example of an empty element, where you do not need opening and closing tags, as there is nothing to go in between them.</p>
+        <p>The &lt;br /&gt; tag has a space between the characters br and the forward slash. If you omit this space, older browsers will have trouble rendering the line break, while if you miss the forward slash character and just use &lt;br&gt; it is not
+            valid in XHTML.</p>
+        <h3>Example</h3>
+        <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+
+    &lt;head&gt;
+        &lt;title&gt;Line Break  Example&lt;/title&gt;
+    &lt;/head&gt;
+	
+    &lt;body&gt;
+        &lt;p&gt;Hello&lt;br/&gt;
+         You delivered your assignment ontime.&lt;br/&gt;
+         Thanks&lt;br/&gt;
+         Mahnaz&lt;/p&gt;
+    &lt;/body&gt;
+	
+    &lt;/html&gt;
+        </pre>
+        <p>This will produce the following result −</p>
+        <pre>
+    Hello
+    You delivered your assignment on time.
+    Thanks
+    Mahnaz
+        </pre>
+        <h2>Horizontal Lines</h2>
+        <p>Horizontal lines are used to visually break-up sections of a document. The <b>&lt;hr&gt;</b> tag creates a line from the current position in the document to the right margin and breaks the line accordingly.</p>
+        <p>For example, you may want to give a line between two paragraphs as in the given example below −</p>
+        <h3>Example</h3>
+        <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+
+    &lt;head&gt;
+        &lt;title&gt;Horizontal Line Example&lt;/title&gt;
+    &lt;/head&gt;
+	
+    &lt;body&gt;
+        &lt;p&gt;This is paragraph one and should be on top&lt;/p&gt;
+        &lt;hr /&gt;
+        &lt;p&gt;This is paragraph two and should be at bottom&lt;/p&gt;
+    &lt;/body&gt;
+	
+    &lt;/html&gt;
+        </pre>
+        <p>This will produce the following result −</p>
+        <pre>
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Horizontal Line Example</title>
+    </head>
+    <body>
+      <p>This is paragraph one and should be on top</p>
+      <hr />
+      <p>This is paragraph two and should be at bottom</p>
+    </body>	
+    </html>
+        </pre>
+        <p>Again <b>&lt;hr /&gt;</b> tag is an example of the <b>empty</b> element, where you do not need opening and closing tags, as there is nothing to go in between them.</p>
+        <p>The <b>&lt;hr /&gt;</b> element has a space between the characters <b>hr</b> and the forward slash. If you omit this space, older browsers will have trouble rendering the horizontal line, while if you miss the forward slash character and just
+            use <b>&lt;hr&gt;</b> it is not valid in XHTML.
+
+        </p>
+        <h2>Preserve Formatting</h2>
+        <p>Sometimes, you want your text to follow the exact format of how it is written in the HTML document. In these cases, you can use the preformatted tag <b>&lt;pre&gt;</b>.</p>
+        <p>Any text between the opening <b>&lt;pre&gt;</b> tag and the closing <b>&lt;/pre&gt;</b> tag will preserve the formatting of the source document.</p>
+        <h3>Example</h3>
+        <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+
+    &lt;head&gt;
+        &lt;title&gt;Preserve Formatting Example&lt;/title&gt;
+    &lt;/head&gt;
+	
+    &lt;body&gt;
+        &lt;pre&gt;
+         function testFunction( strText ){
+            alert (strText)
+         }
+        &lt;/pre&gt;
+    &lt;/body&gt;
+
+    &lt;/html&gt;
+        </pre>
+        <p>This will produce the following result -</p>
+        <pre>
+    <!DOCTYPE html>
+    <html>
+            
+    <head>
+        <title>Preserve Formatting Example</title>
+    </head>         
+    <body>
+        <pre class="1">
+            function testFunction( strText ){
+                alert (strText)
+            }
+        </pre>
+</body>
+
+</html>
+</pre>
+
+</div>
+
+</body>
+
+</html>

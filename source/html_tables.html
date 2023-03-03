@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <link rel="stylesheet" href="layout-styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="utf-8">
+    <title>HTML Tables</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <a class="header" href="home.html">
+            <h2>HTML Tutorial</h2>
+        </a>
+    </div>
+
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn"><b>HTML</b>
+          <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="dropdown-content">
+                <a href="home.html">HTML Tutorial</a>
+                <a href="html_overview.html">HTML Overview</a>
+                <a href="html_basictags.html">HTML Basic Tags</a>
+                <a href="html_elements.html">HTML Elements</a>
+                <a href="html_attributes.html">HTML Attributes</a>
+                <a href="html_phrasetags.html">HTML Phrase Tags</a>
+                <a href="html_images.html">HTML Images</a>
+                <a href="html_tables.html">HTML Tables</a>
+                <a href="html_lists.html">HTML Lists</a>
+                <a href="html_links.html">HTML Links</a>
+                <a href="html_iframes.html">HTML Iframes</a>
+
+            </div>
+
+        </div>
+
+        <a href="videos.html"><b>Videos</b></a>
+        <a href="about.html"><b>About</b></a>
+
+    </div>
+    <div class="text">
+        <h1>HTML Tables</h1>
+        <p>The HTML tables allow web authors to arrange data like text, images, links, other tables, etc. into rows and columns of cells.</p>
+        <p>The HTML tables are created using the <b>&lt;table&gt;</b>tag in which the <b>&lt;tr&gt;</b> tag is used to create table rows and <b>&lt;td&gt;</b> tag is used to create data cells. The elements under <b>&lt;td&gt;</b> are regular and left aligned
+            by default
+        </p>
+        <h3>Example</h3>
+        <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+
+    &lt;head&gt;
+      &lt;title&gt;HTML Tables&lt;/title&gt;
+    &lt;/head&gt;
+	
+    &lt;body&gt;
+    &lt;table border = "1"&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Row 1, Column 1&lt;/td&gt;
+            &lt;td&gt;Row 1, Column 2&lt;/td&gt;
+         &lt;/tr&gt;
+         
+         &lt;tr&gt;
+            &lt;td&gt;Row 2, Column 1&lt;/td&gt;
+            &lt;td&gt;Row 2, Column 2&lt;/td&gt;
+         &lt;/tr&gt;
+    &lt;/table&gt;
+      
+    &lt;/body&gt;
+    &lt;/html&gt;
+        </pre>
+
+        <p>This will produce the following result −</p>
+
+        <pre>
+            <!DOCTYPE html>
+            <html>
+        
+            <head>
+              <title>HTML Tables</title>
+            </head>
+            
+            <body>
+            <table border = "1">
+                 <tr>
+                    <td>Row 1, Column 1</td>
+                    <td>Row 1, Column 2</td>
+                 </tr>
+                 
+                 <tr>
+                    <td>Row 2, Column 1</td>
+                    <td>Row 2, Column 2</td>
+                 </tr>
+            </table>
+              
+            </body>
+            </html>
+                </pre>
+        <p>Here, the border is an attribute of <b>&lt;table&gt;</b> tag and it is used to put a border across all the cells. If you do not need a border, then you can use border = "0".</p>
+        <h2>Table Heading</h2>
+        <p>Table heading can be defined using <b>&lt;th&gt;</b> tag. This tag will be put to replace &lt;td&gt; tag, which is used to represent actual data cell. Normally you will put your top row as table heading as shown below, otherwise you can use &lt;th&gt;
+            element in any row. Headings, which are defined in &lt;th&gt; tag are centered and bold by default.</p>
+        <h3>Example</h3>
+        <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+
+    &lt;head&gt;
+      &lt;title&gt;HTML Table Header&lt;/title&gt;
+    &lt;/head&gt;
+	
+    &lt;body&gt;
+      &lt;table border = "1"&gt;
+         &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;h&gt;Salary&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Ramesh Raman&lt;/td&gt;
+            &lt;td&gt;5000&lt;/td&gt;
+         &lt;/tr&gt;
+         
+         &lt;tr&gt;
+            &lt;td&gt;Shabbir Hussein&lt;/td&gt;
+            &lt;td&gt;7000&lt;/td&gt;
+         &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/body&gt;
+   
+    &lt;/html&gt;
+        </pre>
+        <p>This will produce the following result −</p>
+
+        <pre>
+            <!DOCTYPE html>
+            <html>
+        
+            <head>
+              <title>HTML Table Header</title>
+            </head>
+            
+            <body>
+              <table border = "1">
+                 <tr>
+                    <th>Name</th>
+                    <th>Salary</th>
+                 </tr>
+                 <tr>
+                    <td>Ramesh Raman</td>
+                    <td>5000</td>
+                 </tr>
+                 
+                 <tr>
+                    <td>Shabbir Hussein</td>
+                    <td>7000</td>
+                 </tr>
+              </table>
+            </body>
+           
+            </html>
+        </pre>
+
+        <h2>Tables Backgrounds</h2>
+        <p>You can set table background using one of the following two ways −</p>
+        <ul>
+            <li><b>bgcolor attribute −</b> You can set background color for whole table or just for one cell.</li>
+            <li><b>background attribute −</b> You can set background image for whole table or just for one cell.</li>
+        </ul>
+        <p>You can also set border color also using <b>bordercolor</b> attribute.</p>
+        <em><b>Note −</b> The bgcolor, background, and bordercolor attributes deprecated in HTML5. Do not use these attributes.</em>
+        <h3>Example</h3>
+        <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+            
+    &lt;head&gt;
+        &lt;title&gt;HTML Table Background&lt;/title&gt;
+    &lt;/head&gt;
+                
+    &lt;body&gt;
+    &lt;table border = "1" bordercolor = "green" bgcolor = "yellow"&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Column 1&lt;/th&gt;
+            &lt;th&gt;Column 2&lt;/th&gt;
+            &lt;th&gt;Column 3&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td rowspan="2"&gt;Row 1 Cell 1&lt;/td&gt;
+            &lt;td&gt;Row 1 Cell 2&lt;/td&gt;
+            &lt;td&gt;Row 1 Cell 3&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Row 2 Cell 2&lt;/td&gt;
+            &lt;td&gt;Row 2 Cell 3&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan = "3"&gt;Row 3 Cell 1&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;/body&gt;
+                
+    &lt;/html&gt;
+        </pre>
+
+        <p>This will produce the following result −</p>
+        <pre>
+            <!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML Table Background</title>
+   </head>
+	
+   <body>
+      <table border = "1" bordercolor = "green" bgcolor = "#yellow">
+         <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+         </tr>
+         <tr>
+            <td rowspan = "2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+         </tr>
+         <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+         </tr>
+         <tr>
+            <td colspan = "3">Row 3 Cell 1</td>
+         </tr>
+      </table>
+   </body>
+	
+</html>
+        </pre>
+
+        <h2>Table Height and Width</h2>
+        <p>You can set a table width and height using <b>width</b> and <b>height</b> attributes. You can specify table width or height in terms of pixels or in terms of percentage of available screen area.</p>
+        <h3>Example</h3>
+        <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+            
+    &lt;head&gt;
+        &lt;title&gt;HTML Table Width/Height&lt;/title&gt;
+    &lt;/head&gt;
+                
+    &lt;body&gt;
+        &lt;table border = "1" width = "400" height = "150"&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Row 1, Column 1&lt;/td&gt;
+                &lt;td&gt;Row 1, Column 2&lt;/td&gt;
+            &lt;/tr&gt;
+                     
+            &lt;tr&gt;
+                &lt;td&gt;Row 2, Column 1&lt;/td&gt;
+                &lt;td&gt;Row 2, Column 2&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/body&gt;
+                
+    &lt;/html&gt;
+</pre>
+
+        <p>This will produce the following result −</p>
+
+        <pre>
+    <!DOCTYPE html>
+    <html>
+            
+    <head>
+        <title>HTML Table Width/Height</title>
+    </head>
+                
+    <body>
+        <table border = "1" width = "400" height = "150">
+            <tr>
+                <td>Row 1, Column 1</td>
+                <td>Row 1, Column 2</td>
+            </tr>
+                     
+            <tr>
+                <td>Row 2, Column 1</td>
+                <td>Row 2, Column 2</td>
+            </tr>
+        </table>
+    </body>
+                
+    </html>
+</pre>
+
+        <h2>Table Header, Body, and Footer</h2>
+        <p>Tables can be divided into three portions − a header, a body, and a foot. The head and foot are rather similar to headers and footers in a word-processed document that remain the same for every page, while the body is the main content holder of
+            the table.</p>
+        <p>The three elements for separating the head, body, and foot of a table are −</p>
+        <ul>
+            <li><b>&lt;thead&gt;</b> − to create a separate table header.</li>
+            <li><b>&lt;tbody&gt;</b> − to indicate the main body of the table.</li>
+            <li><b>&lt;tfoot&gt;</b> − to create a separate table footer.</li>
+        </ul>
+
+        <p>A table may contain several &lt;tbody&gt; elements to indicate different pages or groups of data. But it is notable that &lt;thead&gt; and &lt;tfoot&gt; tags should appear before &lt;tbody&gt;&lt;/tbody&gt;
+        </p>
+        <h3>Example</h3>
+        <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+
+    &lt;head&gt;
+      &lt;title&gt;HTML Table&lt;/title&gt;
+    &lt;/head&gt;
+	
+    &lt;body&gt;
+        &lt;table border = "1" width = "100%"&gt;
+         &lt;thead&gt;
+            &lt;tr&gt;
+               &lt;td colspan = "4"&gt;This is the head of the table&lt;/td&gt;
+            &lt;/tr&gt;
+         &lt;/thead&gt;
+         
+         &lt;tfoot&gt;
+            &lt;tr&gt;
+               &lt;td colspan = "4"&gt;This is the foot of the table&lt;/td&gt;
+            &lt;/tr&gt;
+         &lt;/tfoot&gt;
+         
+         &lt;tbody&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Cell 1&lt;/td&gt;
+               &lt;td&gt;Cell 2&lt;/td&gt;
+               &lt;td&gt;Cell 3&lt;/td&gt;
+               &lt;td&gt;Cell 4&lt;/td&gt;
+            &lt;/tr&gt;
+         &lt;/tbody&gt;
+         
+        &lt;/table&gt;
+   &lt;/body&gt;
+	
+    &lt;/html&gt;
+        </pre>
+        <p>This will produce the following result −</p>
+
+        <pre>
+            <!DOCTYPE html>
+            <html>
+        
+            <head>
+              <title>HTML Table</title>
+            </head>
+            
+            <body>
+                <table border = "1" width = "100%">
+                 <thead>
+                    <tr>
+                       <td colspan = "4">This is the head of the table</td>
+                    </tr>
+                 </thead>
+                 
+                 <tfoot>
+                    <tr>
+                       <td colspan = "4">This is the foot of the table</td>
+                    </tr>
+                 </tfoot>
+                 
+                 <tbody>
+                    <tr>
+                       <td>Cell 1</td>
+                       <td>Cell 2</td>
+                       <td>Cell 3</td>
+                       <td>Cell 4</td>
+                    </tr>
+                 </tbody>
+                 
+                </table>
+           </body>
+            
+            </html>
+                </pre>
+    </div>
+</body>
+
+</html>
